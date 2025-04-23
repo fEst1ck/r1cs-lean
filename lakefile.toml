@@ -1,10 +1,14 @@
-name = "hello-lean"
+name = "r1cs"
 version = "0.1.0"
-defaultTargets = ["hello-lean"]
+defaultTargets = ["R1CS"]
 
 [[lean_lib]]
-name = "HelloLean"
+name = "R1CS"
 
 [[lean_exe]]
 name = "hello-lean"
 root = "Main"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
